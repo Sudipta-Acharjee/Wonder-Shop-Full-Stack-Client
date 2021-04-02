@@ -1,0 +1,23 @@
+.checkout {
+  margin-top: 60px;
+  text-align: center;
+}
+.head {
+  display: flex;
+  margin-left: 200px;
+  border: 1px solid purple;
+  margin-right: 70px;
+  padding-bottom: 20px;
+}
+.head h4 {
+  margin-top: 50px;
+  padding-left: 150px;
+}
+.head h5 {
+  color: blueviolet;
+  margin-left: 70%;
+}
+.checkOut {
+  margin-top: 2%;
+  margin-left: 70%;
+}

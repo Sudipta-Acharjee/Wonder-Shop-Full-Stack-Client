@@ -1,0 +1,39 @@
+.column {
+  width: 16%;
+  padding: 0 7px;
+  margin-left: 100px;
+}
+.row {
+  width: 30%;
+  float: left;
+}
+.productCart {
+  width: 550%;
+  padding-left: 30px;
+  padding-top: 20px;
+  margin: 10px;
+  border-radius: 5px;
+  padding-right: 5px;
+}
+.productCart img {
+  width: 130px;
+  height: 130px;
+  margin-left: 30px;
+  position: center;
+}
+.productCart h3 {
+  margin-right: 1px;
+  padding-right: 10px;
+}
+.productCart h2{
+   margin-right: 30px;
+}
+.productCart button {
+  margin-bottom: 2px;
+  color:brown
+ 
+}
+.price {
+    display: flex;
+    padding: 20px;
+}

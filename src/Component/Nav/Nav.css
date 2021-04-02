@@ -1,0 +1,14 @@
+.nav-name {
+  background-color: aqua;
+  display: flex;
+}
+.name{
+    margin-left: 800px;
+    padding:10px;
+}
+.name a{
+    padding:20px;
+}
+.name button{
+  position:fixed;
+}
