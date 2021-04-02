@@ -10,14 +10,14 @@ const Checkout = () => {
     const [details, setDetails] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://peaceful-caverns-72572.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setDetails(data[id]))
     }, [])
 
     const handleCheck = () => {
         const newCheck = { ...details}
-        fetch('http://localhost:5000/addCheck', {
+        fetch('https://peaceful-caverns-72572.herokuapp.com/addCheck', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newCheck)
@@ -45,7 +45,7 @@ const Checkout = () => {
                             <h5><strong>Total:</strong>{details.value}</h5>
                         </div>
                     </div>
-                    <Link to={`/Orders/${id}`}><button onClick={handleCheck} className="checkOut">Submit</button></Link>
+                    <Link to={`/Orders/${id}`}><button onClick={handleCheck} className="checkOut">Checkout</button></Link>
                 </header>
             </Form>
         </div>

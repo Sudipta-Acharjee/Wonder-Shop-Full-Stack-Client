@@ -5,9 +5,9 @@ import './Orders.css'
 const Orders = () => {
     const [loggedInUser, setLoggedInUser] = useContext(UserContext)
     const [bookings, setBookings] = useState([]);
-    
+
     useEffect(() => {
-        fetch('http://localhost:5000/bookings?email=' + loggedInUser.email)
+        fetch('https://peaceful-caverns-72572.herokuapp.com/bookings?email=' + loggedInUser.email)
             .then(res => res.json())
             .then(data => setBookings(data))
     }, [])
@@ -19,10 +19,10 @@ const Orders = () => {
             </div>
             <br />
             <div className="form">
-                <h4>Name: {loggedInUser.name}</h4>
+                <h4>Email: {loggedInUser.email}</h4>
                 {
-                    bookings.map(book => <li>
-                        {book.name} Price:{book.value}
+                    bookings.map(product => <li>
+                        {product.name} Price:{product.value}
                     </li>)
                 }
             </div>

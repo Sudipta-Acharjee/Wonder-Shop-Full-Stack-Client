@@ -4,4 +4,6 @@
 }
 .form{
     text-align: center;
+    border: 1px solid purple;
+    border-radius:5px ;
 }

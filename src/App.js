@@ -20,7 +20,7 @@ export default function BasicExample() {
   const [loggedInUser, setLoggedInUser] = useState({})
   return (
     <UserContext.Provider value={[loggedInUser, setLoggedInUser]}>
-      <p>User: {loggedInUser.email}</p>
+      <p>User: {loggedInUser.name}</p>
       <Router>
         <div>
           <Nav></Nav>

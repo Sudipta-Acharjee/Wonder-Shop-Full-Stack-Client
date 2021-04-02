@@ -15,7 +15,7 @@ const Admin = () => {
             imageURL: imageURL,
             price:data.price
         }
-        const url = `http://localhost:5000/addEvent`
+        const url = `https://peaceful-caverns-72572.herokuapp.com/addEvent`
         console.log(eventData)
         fetch(url, {
             method: 'POST',
@@ -56,7 +56,7 @@ const Admin = () => {
                 <br />
                 <br />
 
-                <input type="submit" />
+                <input type="submit" value="Add Product"/>
             </form>
         </div>
     );

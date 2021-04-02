@@ -9,7 +9,7 @@ const Details = () => {
     const [cart, setCart] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:5000/events')
+        fetch('https://peaceful-caverns-72572.herokuapp.com/events')
         .then(res=>res.json())
         .then(data=>setDetails(data))
     },[])
